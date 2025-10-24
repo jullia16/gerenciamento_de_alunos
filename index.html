@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Alunos</title>
+</head>
+<body>
+  <h2>Cadastro de Alunos</h2>
+
+  <form id="formAluno">
+    <label>Nome:</label>
+    <input type="text" id="nome" required><br><br>
+
+    <label>Idade:</label>
+    <input type="number" id="idade" required><br><br>
+
+    <label>Curso:</label>
+    <select id="curso" required>
+      <option value="">Selecione</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="Java">Java</option>
+    </select><br><br>
+
+    <label>Nota Final:</label>
+    <input type="number" id="nota" required><br><br>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h3>Lista de Alunos</h3>
+
+  <table border="1" id="tabelaAlunos">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Curso</th>
+        <th>Nota</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="codigo.js"></script>
+</body>
+</html>
